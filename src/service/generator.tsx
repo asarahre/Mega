@@ -38,36 +38,40 @@ function geraNumeros2(limit: number) {
   return numeros;
 }
 
-export function atribuiJogo() {
-  let participantes = [
-    "Bento",
-    "Caio",
-    "Daniel",
-    "Deivid",
-    "Diogo",
-    "Fabio",
-    "Fatima",
-    "Gabriel",
-    "Geile",
-    "Heduardo",
-    "Itamar",
-    "Jheine",
-    "Joyce",
-    "Juliano",
-    "Keyla",
-    "Keynes",
-    "Leo",
-    "Lucas Gabriel",
-    "Marcio",
-    "Mateus Fernandes",
-    "Mathues Friedrich",
-    "Pethrus",
-    "Priscila",
-    "Rafael",
-    "Sarah",
-    "Vitor",
-    "Wesley",
-  ];
+export function atribuiJogo(nome: string) {
+  const participantes = nome.split(",");
+
+  //   let participantes = [
+  //     "Bento",
+  //     "Caio",
+  //     "Daniel",
+  //     "Deivid",
+  //     "Diogo",
+  //     "Eloany",
+  //     "Fabio",
+  //     "Fatima",
+  //     "Fernado",
+  //     "Gabriel",
+  //     "Geile",
+  //     "Heduardo",
+  //     "Itamar",
+  //     "Jheine",
+  //     "Joyce",
+  //     "Juliano",
+  //     "Keyla",
+  //     "Keynes",
+  //     "Leo",
+  //     "Lucas Gabriel",
+  //     "Marcio",
+  //     "Mateus Fernandes",
+  //     "Mathues Friedrich",
+  //     "Pethrus",
+  //     "Priscila",
+  //     "Rafael",
+  //     "Sarah",
+  //     "Vitor",
+  //     "Wesley",
+  //   ];
   let jogosFeitos: CardProps[] = [];
 
   participantes.map((participante) => {
@@ -77,7 +81,11 @@ export function atribuiJogo() {
     jogosFeitos.push(jogo);
   });
 
-  jogosFeitos.map(console.log);
-
   return jogosFeitos;
+}
+
+export function addParticipante(nome: string) {
+  const part = nome.split(",");
+
+  console.log(part);
 }
