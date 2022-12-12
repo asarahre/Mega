@@ -41,37 +41,6 @@ function geraNumeros2(limit: number) {
 export function atribuiJogo(nome: string) {
   const participantes = nome.split(",");
 
-  //   let participantes = [
-  //     "Bento",
-  //     "Caio",
-  //     "Daniel",
-  //     "Deivid",
-  //     "Diogo",
-  //     "Eloany",
-  //     "Fabio",
-  //     "Fatima",
-  //     "Fernado",
-  //     "Gabriel",
-  //     "Geile",
-  //     "Heduardo",
-  //     "Itamar",
-  //     "Jheine",
-  //     "Joyce",
-  //     "Juliano",
-  //     "Keyla",
-  //     "Keynes",
-  //     "Leo",
-  //     "Lucas Gabriel",
-  //     "Marcio",
-  //     "Mateus Fernandes",
-  //     "Mathues Friedrich",
-  //     "Pethrus",
-  //     "Priscila",
-  //     "Rafael",
-  //     "Sarah",
-  //     "Vitor",
-  //     "Wesley",
-  //   ];
   let jogosFeitos: CardProps[] = [];
 
   participantes.map((participante) => {

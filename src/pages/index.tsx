@@ -32,7 +32,7 @@ export default function Home() {
             <textarea
               ref={nomesRef as any}
               id="message"
-              className="block p-3 text-md text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+              className="p-3 text-md text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-purple-700 hover:border-purple-400"
               placeholder="John Doe, John Doe"
             ></textarea>
             <button
