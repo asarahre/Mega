@@ -19,7 +19,7 @@ export default function Home() {
       <div className="flex-1 h-full w-full ">
         <Header />
         <div className="flex flex-col items-center gap-4">
-          <p className="text-4xl font-semibold ">Mega da generator</p>
+          <p className="text-4xl font-semibold ">Mega generator</p>
           <div className="mt-4">
             {jogos.map((jogo, key) => (
               <Card key={key} nome={jogo.nome} numeros={jogo.numeros} />
@@ -38,7 +38,7 @@ export default function Home() {
             <button
               onClick={handleClick}
               type="submit"
-              className="px-20 py-3 my-3 text-xl mt-2 text-white bg-gradient-to-br from-purple-400 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300  font-medium rounded-lg text-center "
+              className="px-20 py-3 my-3 text-xl mt-2 text-white bg-gradient-to-br from-purple-400 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300  font-medium rounded-lg text-center"
             >
               Gerar
             </button>
