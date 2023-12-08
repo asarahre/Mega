@@ -20,7 +20,7 @@ export default function Home() {
         <Header />
         <div className="flex flex-col items-center gap-4">
           <p className="text-4xl font-semibold ">Mega generator</p>
-          <div className="mt-4 px-2">
+          <div className="m-4 px-2">
             {jogos.map((jogo, key) => (
               <Card key={key} nome={jogo.nome} numeros={jogo.numeros} />
             ))}
