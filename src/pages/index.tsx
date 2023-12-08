@@ -20,12 +20,12 @@ export default function Home() {
         <Header />
         <div className="flex flex-col items-center gap-4">
           <p className="text-4xl font-semibold ">Mega generator</p>
-          <div className="m-4 px-2">
+          <div className="mt-4 mx-1 px-1">
             {jogos.map((jogo, key) => (
               <Card key={key} nome={jogo.nome} numeros={jogo.numeros} />
             ))}
           </div>
-          <form className="flex flex-col w-full max-w-md p-2 mt-4">
+          <form className="flex flex-col w-full max-w-md px-2 mt-4">
             <label className="block mb-2 text-md font-medium text-gray-900 dark:text-white">
               Nome dos participantes
             </label>
